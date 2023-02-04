@@ -40,4 +40,17 @@ depending on the input vector $\mathbf{x} \in \mathbb{R}^d$."
   - Harder to implement
 
 
-## Multiresolution Hash Encoding
+## Method
+### Multiresolution hash encoding
+> "Given a fully connected neural network $m(\mathbf{y}; \Phi)$, we are interested in an *encoding* of its inputs $\mathbf{y} = \text{enc}(\mathbf{x};\theta)$ that improves the approximation quality and training speed."
+
+Given an input $\mathbf{x} \in \mathbb{R}^d$:
+- Store $L$ "voxel" grids of varying resolution
+  - Each "voxel" vertex is $d$-dimensional
+- For each grid, determine which voxel $\mathbf{x}$ falls into
+  - For each vertex of the voxel, hash the integer coordinates to an integer index
+    - $h: \mathbb{Z}^d \rightarrow \mathbb{Z}_T$
+  - Look up the $F$-dimensional feature vectors corresponding to the indices in a hash table
+  - Linearly interpolate between the feature vectors based on the corresponding vertex distance to the input $\mathbf{x}$ and concatenate
+- Concatenate the $L$ interpolated feature vectors, along with auxiliary inputs $\xi \in \mathbb{R}^E$
+  - Final result $y \in R^{LF + E}$
