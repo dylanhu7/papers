@@ -1,9 +1,10 @@
 # Instant Neural Graphics Primitives with a Multiresolution Hash Encoding
-> Authors: Thomas Müller, Alex Evans, Christoph Schied, Alexander Keller
+> Thomas Müller, Alex Evans, Christoph Schied, Alexander Keller<br>
+> NVIDIA<br>
+> SIGGRAPH 2022
 > 
-> https://nvlabs.github.io/instant-ngp
->
-> My presentation: https://www.icloud.com/keynote/051disEtf0MTAf5oNq3nZguvg#InstantNGP (best viewed in Keynote app, rather than in the browser)
+> [Project page](https://nvlabs.github.io/instant-ngp)<br>
+> [My presentation](https://www.icloud.com/keynote/051disEtf0MTAf5oNq3nZguvg#InstantNGP) (best viewed in Keynote, rather than in the browser)
 
 ## Motivation
 - [Neural Radiance Fields](https://arxiv.org/abs/2003.08934) (NeRF) produce incredible representations of scenes
@@ -82,6 +83,7 @@ Given an input $\mathbf{x} \in \mathbb{R}^d$:
   - Shared voxel vertices avoids discontinuities between voxels
 
 # Results
+> Visit [project page](https://nvlabs.github.io/instant-ngp) for result videos
 ## Gigapixel image approximation
 ACORN (2021): 36.9 hours
 
