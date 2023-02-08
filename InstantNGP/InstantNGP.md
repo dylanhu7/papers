@@ -74,7 +74,7 @@ Given an input $\mathbf{x} \in \mathbb{R}^d$:
   - Colliding gradients average, larger (more important) gradients dominate
     - *Automatically* prioritizes regions with finer detail
 
-## Other advantages
+### Other advantages
 - Online adaptivity
   - Automatically handles changes in the training data distribution
   - Seen in neural radiance caching application
@@ -82,30 +82,30 @@ Given an input $\mathbf{x} \in \mathbb{R}^d$:
   - Linear interpolation induces continuity within voxels
   - Shared voxel vertices avoids discontinuities between voxels
 
-# Results
+## Results
 > Visit [project page](https://nvlabs.github.io/instant-ngp) for result videos
-## Gigapixel image approximation
+### Gigapixel image approximation
 ACORN (2021): 36.9 hours
 
 InstantNGP: 2.5 minutes
 
-## Signed distance fields
+### Signed distance fields
 - Comparable performance to NGLOD with >0.999 IoU
 
 - Significantly outperforms frequency encoding
 
 - Authors note presence of surface roughness and artifacts as a result of unhandled hash collisions, but I found this imperceptible in the SDF application
 
-## Neural radiance caching
+### Neural radiance caching
 - Leverages online adaptivity
 - Didn't really look into this
 
-## Neural radiance fields
+### Neural radiance fields
 - Coherent image after just 1 second on a single GPU
 - Achieves PSNR comparable to NeRF after just 5 seconds
 - Performs particularly well on scenes with a lot of high-frequency detail
 
-# Discussion
+## Discussion
 - Accelerates NeRF training by ~1000x
   - How much can be attributed to the hash encoding vs just great engineering?
     - Authors claim "20-60x improvement" from hash encoding alone by using frequency encoding with their optimized MLPs and volume renderer
