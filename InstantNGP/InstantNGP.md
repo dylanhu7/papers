@@ -1,10 +1,11 @@
 # Instant Neural Graphics Primitives with a Multiresolution Hash Encoding
 > Thomas Müller, Alex Evans, Christoph Schied, Alexander Keller<br>
-> NVIDIA<br>
+> *NVIDIA*<br>
 > SIGGRAPH 2022
-> 
+>
+> [arXiv](https://arxiv.org/abs/2201.05989)<br>
 > [Project page](https://nvlabs.github.io/instant-ngp)<br>
-> [My presentation](https://www.icloud.com/keynote/051disEtf0MTAf5oNq3nZguvg#InstantNGP) (best viewed in Keynote, rather than in the browser)
+> [My Keynote presentation](https://www.icloud.com/keynote/051disEtf0MTAf5oNq3nZguvg#InstantNGP) (best viewed in Keynote, rather than in the browser)
 
 ## Motivation
 - [Neural Radiance Fields](https://arxiv.org/abs/2003.08934) (NeRF) produce incredible representations of scenes
