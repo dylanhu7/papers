@@ -1,5 +1,5 @@
 # Block-NeRF
-> Matthew Tancik, Vincent Casser, Xinchen Yan, Sabeek Pradhan, Ben Mildenhall, Pratul P. Srinivasan, Jonathan T. Barron, Ren Ng, Henrik Kretzschmar<br>
+> Matthew Tancik, Vincent Casser, Xinchen Yan, Sabeek Pradhan, Ben Mildenhall, Pratul P. Srinivasan, Jonathan T. Barron, Henrik Kretzschmar<br>
 > *UC Berkeley, Waymo, Google Research*<br>
 > [arXiv](https://arxiv.org/abs/2202.05263)<br>
 > [Project page](https://nvlabs.github.io/instant-ngp)<br>
