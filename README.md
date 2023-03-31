@@ -1,4 +1,4 @@
 # papers
-Papers I've read and my notes on them.
+My notes on papers I've read.
 
 Feel free to use and redistribute with attribution.
